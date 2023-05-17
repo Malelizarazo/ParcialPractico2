@@ -11,12 +11,12 @@ export class CafeListComponent implements OnInit {
   cafes: Array<Cafe> = [];
   seasonsAverage: number = 0;
 
-  constructor(private cafeService: CafeService) {}
+  constructor(private serieService: CafeService) {}
 
   getCafes(): void {
-    this.cafeService.getCafes().subscribe((cafes) => {
+    this.serieService.getCafes().subscribe((cafes) => {
       this.cafes = cafes;
-      //this.totalCafes = this.total();
+
     });
   }
 

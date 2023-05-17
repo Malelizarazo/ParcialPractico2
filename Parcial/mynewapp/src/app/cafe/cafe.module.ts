@@ -5,13 +5,8 @@ import { CafeListComponent } from './cafe-list/cafe-list.component';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    CafeListComponent
-  ],
-  declarations: [CafeComponent],
-  exports: [CafeComponent,
-    //CafeListComponent
-  ]
+  imports: [CommonModule],
+  declarations: [CafeListComponent],
+  exports: [CafeListComponent],
 })
 export class CafeModule { }
